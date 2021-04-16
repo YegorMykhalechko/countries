@@ -1,4 +1,6 @@
 'use strict'
-//https://restcountries.eu/
+import './styles.css';
+import click from './js/errorNotice.js';//notice 
+
 
 

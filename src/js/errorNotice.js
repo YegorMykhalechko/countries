@@ -1,31 +1,31 @@
-// import "./styles.css";
-// import { error } from "@pnotify/core";
-// import "@pnotify/core/dist/PNotify.css";
-// import "@pnotify/core/dist/BrightTheme.css";
-// import * as Confirm from "@pnotify/confirm";
-// import "@pnotify/confirm/dist/PNotifyConfirm.css";
+import { error } from "@pnotify/core";
+import "@pnotify/core/dist/PNotify.css";
+import "@pnotify/core/dist/BrightTheme.css";
+import * as Confirm from "@pnotify/confirm";
+import "@pnotify/confirm/dist/PNotifyConfirm.css";
 
-// function click() {
-//   error({
-//     title: "Button Clicked",
-//     text:
-//       "You have clicked the button. You may now complete the process of reading the notice.",
-//     modules: new Map([
-//       [
-//         Confirm,
-//         {
-//           confirm: true,
-//           buttons: [
-//             {
-//               text: "Ok",
-//               primary: true,
-//               click: notice => {
-//                 notice.close();
-//               }
-//             }
-//           ]
-//         }
-//       ]
-//     ])
-//   });
-// }
+export default function click() {
+    error({
+        title: false,
+        text:
+            "Too many matches found. Please enter a more specific query!",
+        maxTextHeight: null,
+        modules: new Map([
+            [
+                Confirm,
+                {
+                    confirm: false,
+                    buttons: [
+                        {
+                            text: "Ok",
+                            primary: true,
+                            click: notice => {
+                                notice.close();
+                            }
+                        }
+                    ]
+                }
+            ]
+        ])
+    });
+}
