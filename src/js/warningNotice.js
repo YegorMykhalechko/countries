@@ -12,7 +12,7 @@ export default function warningNotice() {
         text:
             "Counry not found",
         maxTextHeight: null,
-        delay: 2000,
+        delay: 1000,
         modules: new Map([
             [
                 Confirm,

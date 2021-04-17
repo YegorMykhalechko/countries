@@ -8,8 +8,8 @@ import menuTemplate from './templates/menu.hbs';
 import menuItem from './templates/item.hbs';
 
 const refs = {
-    input: document.querySelector('.input'),
-    countryName: document.querySelector('.country'),
+    input: document.querySelector('.input__field'),
+    countryName: document.querySelector('.country__list'),
 }
 
 refs.input.addEventListener('input', debounce(() => {

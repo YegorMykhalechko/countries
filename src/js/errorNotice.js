@@ -12,7 +12,7 @@ export default function errorNotice() {
         text:
             "Too many matches found. Please enter a more specific query!",
         maxTextHeight: null,
-        delay: 2000,
+        delay: 1000,
         modules: new Map([
             [
                 Confirm,

@@ -1,22 +1,23 @@
-
 {{#each this}}
-<li class="item">
-    <article class="article">
-        <div class="name">
-            <h1 class="name-country">{{name}}</h1>
+<li class="country__item">
+    <article class="country-article">
+        <div class="country-article__name">
+            <h1 class="country-article__title">{{name}}</h1>
         </div>
-        <div class="country-characteristics">
-            <h2 class="capital">Capital : {{capital}}</h2>
-            <span class="population">Population : {{population}}</span>
-            <div class="langs">
-                <h2 class="lang-title">Language : </h2>
-                <ul class="lang-list">
-                    {{#each languages}} <li class="lang-item">{{this.name}}</li> {{/each}}
-                </ul>
+        <div class="country-article__container">
+            <div class="country-article__descr">
+                <h2 class="descr__capital">Capital : {{capital}}</h2>
+                <div class="descr__population">Population : {{population}}</div>
+                <div class="descr__langs">
+                    <h2 class="lang__title">Language : </h2>
+                    <ul class="lang__list">
+                        {{#each languages}} <li class="lang__item">{{this.name}}</li> {{/each}}
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="img-flag">
-            <img src="{{flag}}" alt="{{name}}" width="300" height="300">
+            <div class="country-article__img">
+                <img class="img" src="{{flag}}" alt="{{name}}" width="400" height="200">
+            </div>
         </div>
     </article>
 </li>
