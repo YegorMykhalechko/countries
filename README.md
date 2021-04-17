@@ -1,4 +1,4 @@
-GHP: 
+GHP: https://yegormykhalechko.github.io/countries/
 Для быстрого старта необходимо склонировать репозиторий.
 
 ```shell
